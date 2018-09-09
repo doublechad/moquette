@@ -43,6 +43,7 @@ import static io.moquette.logging.LoggingUtils.getInterceptorIds;
 
 /**
  * Launch a configured version of the server.
+ * 伺服器啟動類
  */
 public class Server {
 
@@ -193,7 +194,9 @@ public class Server {
         LOG.debug("Publishing message. CId={}, messageId={}", clientId, messageID);
         m_processor.internalPublish(msg, clientId);
     }
-
+    /**
+     * 關閉伺服器
+     */
     public void stopServer() {
         LOG.info("Unbinding server from the configured ports");
         m_acceptor.close();

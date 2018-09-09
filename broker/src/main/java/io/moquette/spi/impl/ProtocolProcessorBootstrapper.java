@@ -53,7 +53,8 @@ public class ProtocolProcessorBootstrapper {
     private ISessionsStore m_sessionsStore;
 
     private ISubscriptionsStore subscriptionsStore;
-
+    
+    
     private Runnable storeShutdown;
 
     private final ProtocolProcessor m_processor = new ProtocolProcessor();
